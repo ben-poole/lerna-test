@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.invoke = void 0;
 const lib_1 = require("@ben-poole/lib");
 exports.invoke = async () => {
     let user = await lib_1.helperFunction();
