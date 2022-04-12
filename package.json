@@ -1,7 +1,7 @@
 {
   "name": "@ben-poole/lerna-test",
   "version": "0.0.1",
-  "publishConfig": { 
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
@@ -12,13 +12,16 @@
     "audit": "lerna run audit --parallel",
     "publish:repo": "lerna version --conventional-commits --yes",
     "publish:package": "lerna publish --registry=https://npm.pkg.github.com/",
+    "prerelease": "lerna version --conventional-commits --conventional-prerelease --yes",
+    "graduate": "lerna version --conventional-commits --conventional-graduate --yes",
     "diff": "lerna diff"
   },
   "devDependencies": {
-    "lerna": "^3.19.0"
+    "lerna": "^3.19.0",
+    "typescript": "^4.6.3"
   },
-  "repository" : {
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "ssh://git@github.com/ben-poole/lerna-test.git",
     "directory": "packages/root"
   }
