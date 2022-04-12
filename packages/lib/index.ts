@@ -7,7 +7,7 @@ export const helperFunction = async (): Promise<User> => {
     
     const user: User = {
         id: "123",
-        name: "bennyyy"
+        name: "bennyyy-User1"
     }
 
     return user;

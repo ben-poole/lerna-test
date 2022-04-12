@@ -4,7 +4,7 @@ exports.helperFunction = void 0;
 exports.helperFunction = async () => {
     const user = {
         id: "123",
-        name: "bennyyy"
+        name: "bennyyy-User1"
     };
     return user;
 };
